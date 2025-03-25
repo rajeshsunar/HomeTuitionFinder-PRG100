@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Home Tutor Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Home Tutor Finder</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tutor-dashboard.html">Tutor Dashboard</a>
+                <a href="student-dashboard.html" class="active">Student Dashboard</a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#search" class="active">Search Tutors</a>
+                <a href="#bookings">My Bookings</a>
+                <a href="#sessions">Active Sessions</a>
+                <a href="#history">Session History</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="welcome-section">
+                <h2>Welcome, Student!</h2>
+                <p>Find tutors and manage your learning sessions here.</p>
+            </div>
+
+            <section class="dashboard-section" id="search">
+                <h3>Search Tutors</h3>
+                <div class="search-filters">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search by subject or name" class="search-input">
+                    </div>
+                    <div class="filter-group">
+                        <select class="filter-select">
+                            <option value="">Subject</option>
+                            <option value="math">Mathematics</option>
+                            <option value="science">Science</option>
+                            <option value="english">English</option>
+                            <option value="opt.Mathematics">Opt.Mathmatics</option>
+                            <option value="social">Social</option>
+                            <option value="nepali">Nepali</option>
+
+                        </select>
+                        <select class="filter-select">
+                            <option value="">Price Range</option>
+                            <option value="0-500">Rs 0 - Rs 500</option>
+                            <option value="500-1000">Rs 500 - Rs 1000</option>
+                            <option value="1000+">Rs 1000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="tutor-cards">
+                    <div class="tutor-card">
+                        <div class="tutor-info">
+                            <h4>Rajesh Sunar</h4>
+                            <p>Mathematics, Science</p>
+                            <p>Rs 500/hour</p>
+                            <p>⭐ 4.8 (24 reviews)</p>
+                        </div>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                    <div class="tutor-card">
+                        <div class="tutor-info">
+                            <h4>Shreeya Malla</h4>
+                            <p>English, History</p>
+                            <p>Rs 1000/hour</p>
+                            <p>⭐ 4.6 (18 reviews)</p>
+                        </div>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="bookings">
+                <h3>My Bookings</h3>
+                <div class="booking-cards">
+                    <div class="booking-card">
+                        <h4>Mathematics Session</h4>
+                        <p>Tutor: Rajesh Sunar</p>
+                        <p>Date: Tomorrow, 3 PM</p>
+                        <p>Duration: 1 hour</p>
+                        <button class="btn btn-primary">Join Session</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
