@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     z-index: 1000;
+    
 }
 
 .navbar .container {
@@ -111,11 +112,13 @@ main {
 /* Auth Container Styles */
 .auth-container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 150px auto; 
     background-color: var(--white);
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: var(--shadow);
     padding: 2rem;
+    position: relative; 
+    z-index: 1; 
 }
 
 .auth-tabs {
